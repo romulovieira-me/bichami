@@ -1,0 +1,43 @@
+#N canvas 2129 290 951 321 12;
+#X obj 18 244 dac~;
+#X obj 19 62 osc/unpackOSC;
+#X obj 19 93 osc/routeOSC /gyx;
+#X obj 22 148 hsl 128 15 0 180 0 0 empty empty empty -2 -8 0 10 #00faff
+#000000 #000000 0 1;
+#X floatatom 18 119 5 -180 180 0 - - - 0;
+#X obj 20 34 mrpeach/net/udpreceive 255.255.255.255 9999;
+#X obj 19 202 osc~;
+#X obj 347 243 dac~;
+#X obj 348 61 osc/unpackOSC;
+#X obj 351 147 hsl 128 15 0 180 0 0 empty empty empty -2 -8 0 10 #9c00ff
+#000000 #000000 0 1;
+#X floatatom 347 118 5 -180 180 0 - - - 0;
+#X obj 349 33 mrpeach/net/udpreceive 255.255.255.255 9999;
+#X obj 348 201 osc~;
+#X obj 348 92 osc/routeOSC /gyy;
+#X obj 673 244 dac~;
+#X obj 674 62 osc/unpackOSC;
+#X obj 677 148 hsl 128 15 0 180 0 0 empty empty empty -2 -8 0 10 #faff00
+#000000 #000000 0 1;
+#X floatatom 673 119 5 -180 180 0 - - - 0;
+#X obj 675 34 mrpeach/net/udpreceive 255.255.255.255 9999;
+#X obj 674 202 osc~;
+#X obj 674 93 osc/routeOSC /gyz;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 6 0;
+#X connect 4 0 3 0;
+#X connect 5 0 1 0;
+#X connect 6 0 0 0;
+#X connect 8 0 13 0;
+#X connect 9 0 12 0;
+#X connect 10 0 9 0;
+#X connect 11 0 8 0;
+#X connect 12 0 7 0;
+#X connect 13 0 10 0;
+#X connect 15 0 20 0;
+#X connect 16 0 19 0;
+#X connect 17 0 16 0;
+#X connect 18 0 15 0;
+#X connect 19 0 14 0;
+#X connect 20 0 17 0;
